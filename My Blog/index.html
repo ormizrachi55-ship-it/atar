@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Or Mizrachi – Personal Blog</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #f4f5f7;
+            font-family: 'Inter', sans-serif;
+            color: #1c1c1c;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #0d1b2a;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(to bottom right, #1b263b, #25344c);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.8);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .hero h1 {
+            margin-top: 20px;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 15px auto 0 auto;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* ABOUT */
+        .about-section {
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+        .about-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* POSTS */
+        .card {
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 26px rgba(0,0,0,0.18);
+        }
+        .card img {
+            height: 240px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #0d1b2a;
+            color: white;
+            padding: 20px 0;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Or Mizrachi</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="images/or-new-photo.jpg" alt="Or Mizrachi">
+        <h1>Hey, I’m Or</h1>
+        <p>A combat medic. A storyteller. A student of product management.  
+        Stories from Gaza & Lebanon, life lessons, football, food, and everything real.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <div class="container about-section">
+        <h2>About Me</h2>
+        <p>
+            I'm Or — former combat medic from Golani Brigade 13.  
+            Served in Gaza, Lebanon and more places than I can count.  
+            I’ve lived through moments that changed me, people who shaped me, 
+            and experiences that stay with me forever.  
+            Today I’m focusing on building my future: studying product management, 
+            reconnecting with life, and sharing honest stories from the journey.
+        </p>
+    </div>
+
+    <!-- POSTS -->
+    <div class="container">
+        <h2 class="mb-4 fw-bold">Latest Stories</h2>
+        <div class="row g-4">
+
+            <!-- POST 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <!-- Placeholder image for Far From Home -->
+                    <img src="images/far-from-home.jpg" alt="Far From Home">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">Far From Home</h5>
+                        <p class="flex-grow-1">
+                            Five months in Khan Yunis & Rafah.  
+                            Blasts, bullets, chaos — and moments of quiet brotherhood.
+                        </p>
+                        <a href="#" class="btn btn-dark mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <!-- Placeholder image for Soldier at sunset -->
+                    <img src="images/soldier-sunset.jpg" alt="Soldier at Sunset">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">Reflections</h5>
+                        <p class="flex-grow-1">
+                            A soldier pauses, watching the sunset among trees.  
+                            Moments of calm after the storm, reflecting on life and choices.
+                        </p>
+                        <a href="#" class="btn btn-dark mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <!-- Placeholder image for Party / Beer -->
+                    <img src="images/party-beer.jpg" alt="The Hangover">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">The Hangover</h5>
+                        <p class="flex-grow-1">
+                            Weed, beers, girls —  
+                            and a legendary night nobody remembers.
+                        </p>
+                        <a href="#" class="btn btn-dark mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center mt-5">
+        <p class="mb-0">&copy; 2025 Or Mizrachi — All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
